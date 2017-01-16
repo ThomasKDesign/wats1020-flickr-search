@@ -7,7 +7,7 @@
 // Allow users to click the images to see a larger version with more information.
 
 $(document).on('ready', function(){
- 	var searchImages = function(tags) {
+	
 	document.getElementsByClassName('placeholder')[0].style.visibility='hidden';
  	var searchImages = function(tags) {
      var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
@@ -61,16 +61,13 @@ $(document).on('ready', function(){
       var modalBody = modal.find('.modal-body');
       modalBody.empty();
      var modalDescription = $("<p class='image-description'>").html(imageDescription).appendTo(modalBody);
-     var modalDescription = $("<p class='image-description'>").html(imageDescription).appendTo(modalBody); 
   	
      //shows li elements   
     $("button").click(function(){
           $("li").show();
      });
  	 });  
- 
-});  
-
+  });
 
 
 
